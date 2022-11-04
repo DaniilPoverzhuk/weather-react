@@ -1,0 +1,43 @@
+@import "/node_modules//normalize.css/normalize.css";
+@import "./variables.scss";
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(#{--body-background-default});
+  margin: 0 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  &.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 50px;
+
+  height: 50vh;
+  max-width: 1200px;
+  margin: -15px auto 0;
+}

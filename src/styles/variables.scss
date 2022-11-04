@@ -1,0 +1,69 @@
+$index: calc(1vw + 1vh);
+
+$body-background-light: #ffffff;
+$body-background-dark: #0d1117;
+
+$valueInfo-light: #000;
+$valueInfo-dark: #fff;
+
+$backgroundBlock-light: #fff;
+$backgroundBlock-dark: #4f4f4f;
+
+$backgroundTab-light: rgba(71, 147, 255, 0.2);
+$backgroundTab-dark: #2e3035;
+
+$colorTab-light: #000;
+$colorTab-dark: #fff;
+
+$colorCurrentDay-light: #000;
+$colorCurrentDay-dark: #fff;
+
+$colorButton-light: #000;
+$colorButton-dark: #fff;
+
+$colorOption-light: #000;
+$colorOption-dark: #fff;
+
+$backgroundOption-light: rgba(71, 147, 255, 0.2);
+$backgroundOption-dark: #4f4f4f;
+
+$colorSearch-light: #000;
+$colorSearch-dark: #fff;
+
+:root {
+  --body-background-light: #{$body-background-light};
+  --body-background-dark: #{$body-background-dark};
+  --body-background-default: var(#{--body-background-light});
+
+  --valueInfo-light: #{$valueInfo-light};
+  --valueInfo-dark: #{$valueInfo-dark};
+  --valueInfo-default: var(#{--valueInfo-light});
+
+  --backgroundBlock-light: #{$backgroundBlock-light};
+  --backgroundBlock-dark: #{$backgroundBlock-dark};
+  --backgroundBlock-default: var(#{--backgroundBlock-light});
+
+  --backgroundTab-light: #{$backgroundTab-light};
+  --backgroundTab-dark: #{$backgroundTab-dark};
+  --backgroundTab-default: var(#{--backgroundTab-light});
+
+  --colorTab-light: #{$colorTab-light};
+  --colorTab-dark: #{$colorTab-dark};
+  --colorTab-default: var(#{--colorTab-light});
+
+  --colorCurrentDay-light: #{$colorCurrentDay-light};
+  --colorCurrentDay-dark: #{$colorCurrentDay-dark};
+  --colorCurrentDay-default: var(#{--colorCurrentDay-light});
+
+  --colorButton-light: #{$colorButton-light};
+  --colorButton-dark: #{$colorButton-dark};
+  --colorButton-default: var(#{--colorButton-light});
+
+  --backgroundOption-light: #{$backgroundOption-light};
+  --backgroundOption-dark: #{$backgroundOption-dark};
+  --backgroundOption-default: var(#{--backgroundOption-light});
+
+  --colorSearch-light: #{$colorSearch-light};
+  --colorSearch-dark: #{$colorSearch-dark};
+  --colorSearch-default: var(#{--colorSearch-light});
+}

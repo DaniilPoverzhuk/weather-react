@@ -1,0 +1,52 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/variables.scss";
+
+.currentInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+
+  position: relative;
+  padding: 20px;
+
+  background: var(#{--backgroundBlock-default});
+  box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+  border-radius: 20px;
+  height: 40vh;
+
+  &__list {
+    z-index: 10;
+    padding-left: 0;
+    margin: 0;
+
+    &_item {
+      display: flex;
+      align-items: center;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+
+    &_title {
+      margin: 0 15px;
+      font-size: 14px;
+      line-height: 17px;
+
+      color: #939cb0;
+    }
+
+    &_value {
+      font-size: 14px;
+      line-height: 17px;
+      color: var(#{--valueInfo-default});
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 20px;
+  }
+}

@@ -1,0 +1,60 @@
+.header {
+  margin-top: 20px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+
+      color: #4793ff;
+
+      margin-left: 20px;
+    }
+  }
+
+  &__choose {
+    display: flex;
+    align-items: center;
+  }
+
+  &__theme {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  &__form {
+    position: relative;
+    
+    &::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: var(#{--colorSearch-default});
+      left: 0;
+      bottom: -2.5px;
+      position: absolute;
+    }
+  }
+
+  &__input {
+    background: none;
+    border: none;
+    color: var(#{--colorSearch-default});
+    font-weight: 500;
+    letter-spacing: .6px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(#{--colorSearch-default});
+    }
+  }
+}
