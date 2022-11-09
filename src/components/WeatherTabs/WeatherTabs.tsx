@@ -5,8 +5,7 @@ import { weatherTabsNavValues } from "../../assets/data.js";
 
 const arr = [1, 2, 3, 4, 5, 6, 7];
 
-function WeatherTabs() {
-
+export const WeatherTabs: React.FC = () => {
   return (
     <div className={styles.weather_tabs}>
       <div className={styles.weather_tabs__top}>
@@ -25,6 +24,6 @@ function WeatherTabs() {
       </div>
     </div>
   );
-}
+};
 
 export default WeatherTabs;

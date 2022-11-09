@@ -22,14 +22,6 @@ ul {
   margin: 0 auto;
 }
 
-.content {
-  &.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 .top {
   display: flex;
   justify-content: space-between;
@@ -37,7 +29,19 @@ ul {
 
   gap: 50px;
 
-  height: 50vh;
+  height: 40vh;
   max-width: 1200px;
-  margin: -15px auto 0;
+  margin: 2vh auto;
+}
+
+@media (max-width: 767px) {
+  .top {
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 4vh;
+
+    & > div {
+      width: 100%;
+    }
+  }
 }

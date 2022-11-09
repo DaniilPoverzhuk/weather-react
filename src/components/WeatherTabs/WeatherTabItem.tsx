@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./weatherTabs.module.scss";
 import weather from "../../assets/img/weather.svg";
 
-function WeatherTabItem() {
+const WeatherTabItem: React.FC = () => {
   return (
     <div className={styles.weather_tabs__list_item}>
       <div className={styles.weather_tabs__list_dayWeek}>Сегодня</div>
@@ -17,6 +17,6 @@ function WeatherTabItem() {
       <div className={styles.weather_tabs__list_weather}>Облачно</div>
     </div>
   );
-}
+};
 
 export default WeatherTabItem;
